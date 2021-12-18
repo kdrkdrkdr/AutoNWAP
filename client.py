@@ -31,8 +31,8 @@ class RunAutoPaint(QThread):
     def run(self):
         self.driver.get('https://ai.webtoons.com/painter/paint')
 
-        # src_dir = self.window.painted_file_dir.text().replace('/', '\\')
-        src_dir = r'C:\Users\power\Desktop\Project\Dev\AutoNWAP\MyImages'
+        src_dir = self.window.painted_file_dir.text().replace('/', '\\')
+        # src_dir = r'C:\Users\power\Desktop\Project\Dev\AutoNWAP\MyImages'
         dst_dir = f'{src_dir}\\AiPaintedResult'
 
 
